@@ -182,6 +182,26 @@ header {
 .section-two img {
 	margin-bottom: 1.5em;
 }
+
+.sidebar-box {
+	padding: 1em;
+	text-align: center;
+	color: #fff;
+	background-color: var(--clr-med);
+	margin-bottom: 1em;
+}
+
+.sidebar-title {
+	font-family: var(--ff-sans-Bold);
+	font-size: var(--fs-30px);
+	margin-bottom: 1em;
+}
+
+.sidebar p {
+	font-family: var(--ff-sans-Regular);
+	font-size: var(--fs-18px);
+}
+
 footer {
 	background-color: var(--clr-med);
 	padding: 5rem;

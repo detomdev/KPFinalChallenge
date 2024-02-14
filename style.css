@@ -205,4 +205,32 @@ header {
 footer {
 	background-color: var(--clr-med);
 	padding: 5rem;
+	text-align: center;
+	color: var(--clr-white);
+}
+
+.footer-box {
+	margin-bottom: 1.5em;
+}
+
+.footer-heading {
+	font-family: var(--ff-sans-Bold);
+	font-size: var(--fs-36px);
+	color: var(--clr-white);
+	margin-bottom: 2em;
+}
+
+.footer-title {
+	font-family: var(--ff-sans-Bold);
+	font-size: var(--fs-21px);
+	color: var(--clr-light);
+	margin-bottom: 1em;
+}
+
+.nav__list--footer {
+	margin-bottom: 2em;
+}
+
+.nav__list--footer .nav__link {
+	text-transform: none;
 }

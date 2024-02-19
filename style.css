@@ -103,6 +103,67 @@ header {
 	font-size: 1rem;
 }
 
+.nav-toggle {
+	cursor: pointer;
+	border: 0;
+	width: 3em;
+	height: 3em;
+	padding: 0em;
+	border-radius: 50%;
+	background: var(--clr-gray);
+	color: white;
+	transition: opacity 250ms ease;
+
+	position: absolute;
+	right: 0;
+}
+
+.nav-toggle:focus,
+.nav-toggle:hover {
+	opacity: 0.75;
+}
+
+.hamburger {
+	width: 50%;
+	position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+	display: block;
+	margin: 0 auto;
+	height: 3px;
+	background: white;
+}
+
+.hamburger::before,
+.hamburger::after {
+	content: "";
+	width: 100%;
+}
+
+.hamburger::before {
+	transform: translateY(-6px);
+}
+
+.hamburger::after {
+	transform: translateY(3px);
+}
+
+.nav {
+	visibility: hidden;
+	height: 0;
+	/* position: absolute; */
+	font-size: 1rem;
+}
+
+.nav--visible {
+	visibility: visible;
+	height: auto;
+	position: relative;
+}
+
 .nav__list {
 	margin: 0;
 	padding: 0;
@@ -346,6 +407,10 @@ footer {
 	}
 
 	.footer-about {
-		max-width: 35%;
+		max-width: 40%;
+	}
+
+	.nav__list--footer {
+		flex-direction: column;
 	}
 }
